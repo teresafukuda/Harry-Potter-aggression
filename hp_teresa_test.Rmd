@@ -31,9 +31,12 @@ hp_graph <- hp_data %>%
   ggplot(aes(x=book, y=agg.per.mention)) +
   geom_col(aes(fill=Name), position="dodge") + #geom column by default will show a stacked column graph
   coord_flip()+
-  theme_bw()
+  theme_bw() +
+  labs(x= "Book", y= "Aggression Rate")
 
 hp_graph
 
 ```
 
+
+Test phrase. 
